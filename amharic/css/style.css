@@ -1,0 +1,693 @@
+
+/*--------------------------------------------------------*/
+/*                   resusable properties                 */
+/*--------------------------------------------------------*/
+
+
+
+
+
+/*#2ecc71------------green color*/
+
+
+
+:root
+{
+--green:#27ae60;
+--black:#192a56;
+--light-color: :#666;
+--box-shadow:0 7px 12px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15);s
+--border:.2rem solid rgba(0,0,0,.1);
+--cutline:.1rem solid rgba(0,0,0,.1);
+--outline: .1rem solid rgba(0,0,0,.1);
+
+}
+
+*
+{
+font-family: 'poppins' ,sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+border: none;
+outline: none;
+text-transform: capitalize;
+transition: all .2s linear;
+
+
+}
+html
+{
+font-size: 62.5%;
+overflow-x: hidden;
+scroll-padding-top: 7rem;
+scroll-behavior: smooth;
+
+}
+
+body
+{
+
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+}
+
+
+/*--------------------------------------------------------*/
+/*                        Footer                          */
+/*--------------------------------------------------------*/
+
+
+footer
+{
+    width: 100%;
+    position: bottom;
+    bottom: 0;
+    background: linear-gradient(to right,var(--black),#218c74);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 10rem;
+    line-height: 30px;
+ 
+}
+
+.row
+{
+   width: 85%;
+   margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content: space-between;
+
+}
+.col
+{
+    flex-basis: 25%;
+    padding: 10px;
+}
+.col h2
+{
+    font-size: 400;
+}
+.logo
+{
+  width: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  align-self: center;
+}
+.col h3
+{
+  width: fit-content;
+  margin-bottom: 10px;
+  position: relative;
+
+}
+.email
+{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/*--------------------------------------------------------*/
+/*                   resusable properties                 */
+/*--------------------------------------------------------*/
+
+
+
+section{
+    padding: 2.5rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black);
+}
+
+.heading span{
+    background: var(--black);
+
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 8px 22px;
+    font-size: 1.7rem;
+    border-radius: 30px;
+    border:5px solid #2ecc71;
+    color:var(--black);
+    cursor: pointer;
+    background: none;
+    font-size: 2rem;
+}
+
+.btn:hover{
+    background: var(--black);
+    color:#fff;
+    font-size: 400;
+    font-weight: 400;
+        border:5px solid var(--black);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.79), 0 6px 6px rgba(0,0,0,0.53);
+}
+
+
+
+
+
+/*--------------------------------------------------------*/
+/*                   header                               */
+/*--------------------------------------------------------*/
+
+
+
+
+
+
+.header
+{
+
+	position: fixed;
+    top: 3px; left: 0; right: 0;
+	margin-left:  4%;
+    margin-right:  4%;
+     border-radius: 3rem;
+
+	background: #fff;
+	padding: 2rem 9%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+     box-shadow: 0 7px 12px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15);
+
+}
+
+.header .logo
+{
+	font-size: 2.5rem;
+	font-weight: bolder;
+	color: var(--green);
+}
+
+.header .navbar a
+{
+	 font-size: 1.9rem;
+	 font-weight: bolder;
+	 margin: 0 1rem;
+     color: var(--black);
+     
+     border-radius: 50px;
+      padding: 1rem 1.5rem;
+      transition: all 0.4s;
+ 
+}
+.header .navbar a:hover,
+.header .navbar a:active
+{
+
+color: #fff;
+background: #2ecc71;
+  transform: scale(1.2);
+ 
+}
+
+#for-farmers
+{
+	color: #fff;
+background: #2ecc71;
+  font-size: 1.7rem;
+  border-radius: 50px;
+  padding: 1.5rem 3.0rem;
+}
+
+#for-farmers:hover
+{
+    background: var(--black);
+}
+
+.header .icons div
+{
+	cursor: pointer;
+margin-left: .3rem;
+height: 4.5rem;
+line-height: 4.5rem;
+width: 4.5rem;
+text-align: center;
+font-size: 2rem;
+color: var(--black);
+border-radius: 50%;
+background: #eee;
+text-align: center;
+display: inline-block;
+}
+
+.header .icons div:hover
+{
+	color: #fff;
+background: #2ecc71;
+color: #fff;
+transform: rotate(360deg);
+
+}
+
+#menu-btn
+{
+	display: none;
+}
+/*----------------------search button-------------------------------------------*/
+
+.header .search-form 
+{
+	position: absolute;
+	top: 110%; right: -110%;
+	width: 50rem;
+	height: 4rem;
+	background-color: #fff;
+	border-radius: .5rem;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	box-shadow: var(--box-shadow);
+
+}
+
+
+
+.header .search-form input
+{
+	height: 100%;
+	width: 100%;
+	background: none;
+	text-transform: none;
+	font-size: 1.6rem;
+	color: var(--black);
+	padding: 0 1rem;
+
+
+}
+
+.header .search-form label
+{
+	font-size: 2.2rem;
+	padding-right: 1.5rem;
+	color: var(--black);
+	cursor: pointer;
+    transition: all 2s smooth;
+}
+
+.header .search-form label:hover
+{
+color: red;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------*/
+/*              cover-photo-shop                          */
+/*--------------------------------------------------------*/
+
+
+
+
+
+
+
+.cover-page-shop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    background-attachment: fixed;
+    border-radius: 2rem;
+    margin-top: 13rem;
+    margin-left:  5%;
+    margin-right:  5%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url("../img/Fruits-and-vegetables-banana-tomato-oranges-peppers-broccoli_3840x2160.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.79), 0 6px 6px rgba(0,0,0,0.73);
+}
+
+.cover-page-shop .content{
+    text-align: center;
+    width:70rem;
+}
+
+.cover-page-shop .content h3{
+    color: #fff;
+    font-size: 4rem;
+}
+
+.cover-page-shop .content h3 span{
+    color:var(--green);
+}
+
+.cover-page-shop .content p{
+    color: #fff;
+    font-size: 1.7rem;
+    padding:1rem 0;
+    line-height: 1;
+}
+
+.btn-shop-now{
+    margin-top: 2rem;
+      margin-bottom: 2rem;
+    display: inline-block;
+    padding: 8px 22px;
+    font-size: 2rem;
+    border-radius: 30px;
+    border:5px solid #2ecc71;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    transition: all 0.1s;
+   
+}
+
+.btn-shop-now:hover{
+    background: #2ecc71;
+    color:#fff;
+    font-size: 600;
+    font-weight: 600;
+    transform: scale(1.2);
+}
+
+
+section .
+{
+    align-content: center;
+}
+
+
+/*--------------------------------------------------------*/
+/*             categoriess                                */
+/*--------------------------------------------------------*/
+
+.categories .box-container{
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap:1.5rem;
+}
+
+.categories .box-container .box{
+    padding:3rem 2rem;
+    border-radius: 5rem;
+    background:#fff;
+    box-shadow: var(--box-shadow);
+   box-shadow: 0 7px 12px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15);
+    text-align: center;
+
+
+transition: all 0.2s ;
+  
+}
+
+.categories .box-container .box:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+      
+       transform: scale(1.1);
+
+}
+
+.categories .box-container .box img{
+    margin:1rem 0;
+    height:15rem;
+}
+
+.categories .box-container .box h3{
+   font-size: 2rem;
+   color:var(--black);
+   line-height: 1.8;
+}
+
+.categories .box-container .box p{
+    font-size: 1.7rem;
+    color:var(--light-color);
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+
+
+/*---------------------------------------------------------------------*/
+
+.review .review-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: 2s linear smooth;
+}
+
+.review .review-slider .box:hover{
+    outline:var(--outline-hover);
+    outline-offset: 0rem;
+}
+
+
+
+
+/*--------------------------------------------------------*/
+/*            PRODUCTS                                    */
+/*--------------------------------------------------------*/
+
+
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.3rem;
+}
+
+.menu .box-container .box{
+    background: #fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: 3rem;
+    box-shadow: var(--box-shadow); 
+    transition: all 2s smooths; 
+    height: 35rem;  
+}
+
+.menu .box-container .box: hover{
+    transform: scale(1.2);
+
+}
+
+
+.menu .box-container .box .image{
+    height: 20rem;
+    width: 100%;
+    padding:0rem;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.menu .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+   
+    object-fit: cover;
+}
+
+.menu .box-container .box .image .fa-heart{
+    position: absolute;
+    top:2.5rem; right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: #fff;
+    border-radius: 50%;
+    color:var(--black);
+
+}
+
+.menu .box-container .box .image .fa-heart:hover{
+    background-color: var(--green);
+    color:#fff;
+}
+
+.menu .box-container .box .content{
+    padding:2rem;
+    padding-top: 0;
+}
+
+.menu .box-container .box .content .stars{
+    padding-bottom: 1rem;
+}
+
+.menu .box-container .box .content .stars i{
+   font-size: 1.7rem;
+   color:var(--green);
+}
+
+.menu .box-container .box .content h3{
+    color:var(--black);
+    font-size: 2.5rem;
+}
+
+.menu .box-container .box .content p{
+    color:var(--light-color);
+    font-size: 1.6rem;
+    padding:.5rem 0;
+    line-height: 1.5;
+}
+
+.menu .box-container .box .content .price{
+    color:var(--black);
+    margin-left: 1rem;
+    font-size: 2rem;
+  
+      
+}
+
+
+.btn-addCart{
+    margin-top: 1rem;
+     margin-bottom: 1rem;
+ 
+    display: block;
+    padding: 8px 22px;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    color:#fff;
+    cursor: pointer;
+    background: var(--black);
+    transition: all 0.2s;  
+    width: 60%;
+}
+
+.btn-addCart:hover{
+
+    font-size: 400;
+    font-weight: 400;
+    transform: scale(1.1);
+    background: var(--green);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px)
+
+{
+
+	html
+  		{
+  			font-size: 55%;
+
+  		}
+	header 
+  	{
+  		padding: 2rem;
+  	}
+section{
+    padding:2rem 9%;
+}
+
+
+}
+
+
+@media (max-width: 768px)
+ {
+
+#menu-btn
+{
+	display: inline-block;
+}
+
+   .header .navbar{
+position: absolute;
+top: 110%; right: 2rem;
+width: 30rem;
+box-shadow: var(--box-shadow);
+border-radius: 2.5rem;
+background: #fff;
+
+
+ 
+   }
+.header .navbar a
+{
+
+  font-size: 2rem;
+  margin: 2rem 2.5rem;
+  display: block;
+
+}
+
+
+
+}
+
+
+
+
+
+@media (max-width: 450px)
+
+{
+
+	html
+  		{
+  			font-size: 53%;
+
+  		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

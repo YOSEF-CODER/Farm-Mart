@@ -1,0 +1,89 @@
+/*--------------------------------------------------------*/
+/*                        Root                            */
+/*--------------------------------------------------------*/
+
+
+:root
+{
+--green:#2ecc71;
+/*--blue-black:#192a56;*/
+--blue-black:#24262b;
+--box-shadow:0 7px 12px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15);
+--white: #fff;
+--grey1: #3a3b3c;
+--grey2: #828282;
+--text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   /* background: darkgray;*/
+}
+body{
+    background: var(--green);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 360px;
+height: 420px;
+margin: 8% auto;
+background: var(--white);
+border-radius: 30px;
+position: relative;
+overflow: hidden;
+}
+
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #777;
+}
+.container form{
+    width: 280px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+  
+}
+#message{
+    display: none;
+    font-size: 12px;
+}
+#text1{
+    font-size: 12px;
+}
+form input{
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+::placeholder{
+    color: #777;
+}
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+form button{
+
+    background: linear-gradient(to right,#19d150,#108faf);  
+      border: 1px solid hsl(140, 11%, 42%);
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    border-radius: 30px;
+    outline: n;
+    cursor: pointer;
+}
+form button a{
+    text-decoration: none;
+}

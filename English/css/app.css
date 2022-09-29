@@ -1,0 +1,148 @@
+
+/*--------------------------------------------------------*/
+/*                        Root                            */
+/*--------------------------------------------------------*/
+
+
+:root
+{
+--green:#2ecc71;
+/*--blue-black:#192a56;*/
+--blue-black:#24262b;
+--box-shadow:0 7px 12px rgba(0,0,0,0.15), 0 3px 3px rgba(0,0,0,0.15);
+--white: #fff;
+--grey1: #3a3b3c;
+--grey2: #828282;
+--text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+transition: all .2s linear;
+border: none;
+outline: none;
+  }
+ 
+body {
+    margin: 0;
+    background: var(--green);
+    font:normal 14px/20px 'PT Sans', sans-serif;
+    color: var(--blue-black);
+   }
+   p
+{
+    color: var(--blue-black);
+      font-weight: 500;
+    font-size: 1.5rem;
+}
+span{
+    color: var(--green);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+   .container{
+       padding: 0 15px;
+        width: 100%;
+   }
+
+    .form-control2{
+  width: 100%;
+  
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin: 0.6rem 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+ 
+   margin: 50px auto;
+       width: 50%;
+}
+.form-control2:focus{
+  box-shadow: 0 0 6px -3px; rgba(48, 48, 48,1);
+}
+
+   .form-control2 div {
+       background: var(--white);
+       padding: 20px;
+       border-radius: 20px;
+       box-shadow: var(--box-shadow);
+   }
+#text1{
+    font-size: 42px;
+}
+#text2{
+    font-size: 22px;
+}
+#text3{
+    font-size: 12px;
+}
+#text4{
+    font-size: 12px;
+}
+#text{
+    font-size: 12px;
+}
+   .form-control2 h1 {
+       font-size: 10px;
+       padding: 0 0 10px 0;
+       margin-bottom: 30px;
+       border-bottom: 2px solid #000;
+        font-size: 2.2rem;
+   }
+   .form-control2 label {
+       display: block;
+       padding:  0 0 5px;
+       font-size: 12px;
+       color: var(--blue-black);
+   }
+
+   input {
+       border: 1px solid var(--green);
+       padding: 0 10px;
+       font-size: 14px;
+       color: var(--blue-black);
+       line-height: 45px;
+       width: 320px;
+   }
+
+   .form-control2 li {
+       margin-bottom: 15px;
+   }
+
+   button 
+   {
+        margin-top: 1rem;
+    display: inline-block;
+    padding: 8px 22px;
+    border-radius: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background: var(--blue-black);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: all 0.1s;
+    margin-right: 2rem;
+   }
+
+button:hover
+{
+  background: var(--green);
+    color:#fff;
+
+  
+    font-weight: bolder;
+        border:5px solid var(--black);
+}
+
